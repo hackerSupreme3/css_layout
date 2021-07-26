@@ -1,0 +1,38 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/card.css">
+	<link rel="stylesheet" type="text/css" href="../styles/banner.css">
+	<link rel="stylesheet" type="text/css" href="../styles/fixed.css">
+	<title>Playing Around with Absolute Positioning</title>
+</head>
+<body>
+	<header>
+		<h1>Playing Around with Absolute Styles</h1>
+	</header>
+	
+	<section class="row">
+		<div class="card" id="abs-child">
+			<p>This div is positioned absolutely.</p>
+			<p>No parent div means this div will position in relation to the document body.</p>
+			<p>This is offset to far right of parent container</p>
+
+		</div>
+	</section>
+
+	<section class=row id="2">
+		<div class="card" id="abs-parent">
+			<p>This div is absolutely positioned, and acts as a parent.</p>
+
+			<div class="card" id="abs-child">
+				<p>This is offset to far right of parent container</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p><a href="../index.html">Return to Home</a></p>
+	</footer>
+</body>
+</html>

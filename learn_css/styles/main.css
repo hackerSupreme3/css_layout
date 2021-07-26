@@ -1,0 +1,89 @@
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+#card1 {
+	max-width: 600px;
+	margin: 0 auto;
+	position: static;
+
+	padding: 10px;
+
+	border: 1px solid wheat;
+}
+
+#card2 {
+	width: 400px;
+	margin: 10 auto; 
+	/* uses shorthad for top-bottom and left-right respectively */
+
+	padding: 10px;
+
+	border: 1px solid wheat;
+
+	position: relative;
+	top: -20px;
+	background-color: seagreen;
+}
+
+#card2-1 {
+	width: 200px;
+	margin: 0 auto;
+	border: 1px solid wheat;
+}
+
+#card1-1 {
+	width: 250px;
+	margin: 0 auto;
+	border: 1px solid aquamarine;
+}
+
+.size {
+	width: 500px;
+	margin: 20 auto;
+	border: 1px solid aquamarine;
+	text-align: center;
+}
+
+#ex2 {
+	padding: 30px;
+	border-width: 15px;
+}
+
+#div-rel {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 25px;
+	border: 10px solid forestgreen;
+	position: relative;
+}
+
+#div-abs {
+	width: 300px;
+	height: 300px;
+	border: 10px solid forestgreen;
+	position: absolute;
+	top: +50px;
+}
+
+
+
+div.bar {
+	position: fixed;
+	bottom: 0;
+	right: 30%;
+
+	background-color: ghostwhite;
+
+	max-width: 80%;
+	margin: 20px auto;
+	padding: 20px;
+	border: 5px solid springgreen;
+}
+
+.footer {
+	width: 400px;
+}
