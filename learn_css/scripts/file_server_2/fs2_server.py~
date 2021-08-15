@@ -13,11 +13,18 @@ sample_css.close()
 class NewServer(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
-        self.send_header("Content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(bytes(page_html, "utf-8"))
         test_url = self.path
         self.wfile.write(bytes(test_url, "utf-8"))
+
+        if self.path == '/':
+            self.send_header("Content-type", "text/html")
+            self.end_headers()
+            self.wfile.write(bytes(page_html, "utf-8"))
+
+        if self.path == '/styles/main.css':
+            self.send_header('Content-type', 'text/css')
+            self.end_headers()
+            self.wfile.write(bytes(page_css, "utf-8"))
 
 if __name__ == "__main__":
     myServer = HTTPServer(server_address, NewServer)
